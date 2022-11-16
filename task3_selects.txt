@@ -1,0 +1,17 @@
+1
+
+SELECT TOP 10 COUNT(internal_id), LEFT(template_name, CHARINDEX('_', template_name) - 1) as NAME
+FROM exported_templates
+WHERE convert(datetime, event_timestamp, 5) >= DATEADD(day, -30, getdate()).
+GROUP BY LEFT(template_name, CHARINDEX('_', template_name) - 1)
+ORDER BY COUNT(internal_id) DESC;
+
+2
+
+SELECT COUNT(internal_id.exported_templates)/COUNT(internal_id.chosen_templates) as CONVER,
+LEFT(template_name.chosen_templates, CHARINDEX('_', template_name.chosen_templates) - 1) as NAME
+FROM chosen_templates
+LEFT JOIN exported_templates
+ON internal_id.chosen_templates = internal_id.exported_templates
+GROUP BY LEFT(template_name, CHARINDEX('_', template_name) - 1)
+ORDER BY COUNT(internal_id.exported_templates)/COUNT(internal_id.chosen_templates) DESC;

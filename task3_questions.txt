@@ -1,0 +1,2 @@
+Я би прибрав user_id та template_name з таблиці exported_templates, 
+так як цы записи дублють аналогічні з chosen_templates, не будучи необхідними як ключі.

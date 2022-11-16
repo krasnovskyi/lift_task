@@ -1,0 +1,56 @@
+Q1
+
+Funnel
+
+Events order:
+
+1)Користувач побачив шаблон
+
+2)Користувач експортував шаблон
+
+by All Users 
+
+Conversion
+
+
+
+Q2
+
+Funnel
+
+Events order:
+
+1)Користувач побачив шаблон
+
+2)Користувач експортував шаблон
+
+by Template Category
+
+order by template name
+
+counting by totals
+
+Conversion
+
+(виводить таблицю з топовою категорією на початку)
+
+
+
+Q3
+
+Segmentation
+
+Segmentation by:
+
+1)Користувач експортував шаблон
+
+by Template Category
+
+order by Category name
+
+sort by highest-lowest value
+
+
+
+
+
